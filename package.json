@@ -1,0 +1,28 @@
+{
+  "name": "webdb-iii-challenge",
+  "version": "1.0.0",
+  "description": "max's challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-keller427/webdb-iii-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/max-keller427/webdb-iii-challenge/issues"
+  },
+  "homepage": "https://github.com/max-keller427/webdb-iii-challenge#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "helmet": "^3.18.0",
+    "knex": "^0.17.0",
+    "knex-cleaner": "^1.1.4",
+    "nodemon": "^1.19.1",
+    "sqlite3": "^4.0.8"
+  }
+}
