@@ -29,11 +29,16 @@ server.get("/api/cohorts/:id", async (req, res) => {
   }
 });
 
-// server.get('/api/cohorts/:id/students', async (req, res) => {
-//   try {
-
-//   }
-// })
+server.get("/api/cohorts/:id/students", (req, res) => {
+  db("students")
+    .where({ cohort_id: req.params.id })
+    .then(students => {
+      res.status(200).json({ students });
+    })
+    .catch(err => {
+      res.status(500).json({ message: "Error retrieving students" });
+    });
+});
 
 server.post("/api/cohorts", async (req, res) => {
   try {
